@@ -12,4 +12,4 @@ def run():
 
 def keep_alive():
 	thread = Thread(target=run)
-	thread.run()
+	thread.start()
