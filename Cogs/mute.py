@@ -126,7 +126,7 @@ class events(commands.Cog):
 	@commands.command(aliases=["timezone", "tz"])
 	async def timezones(self, ctx):
 		embed_var = Embed.embed("List of available timezones", "``EST``: US/EASTERN \n``PST``: US/PACIFIC \n ``MST``: US/Mountain \n ``GMT``: Etc/GMT \n ``CT``: US/CENTRAL \n ``HST``: US/HAWAII")
-		await ctx.send(embed_var)
+		await ctx.send(embed=embed_var)
 
 def setup(client):
 	client.add_cog(events(client))
